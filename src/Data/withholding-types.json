@@ -8,6 +8,10 @@
     "name": "IVA"
   },
   {
+    "code": 4,
+    "name": "IVA Presuntivo y Renta"
+  },
+  {
     "code": 6,
     "name": "ISD"
   }
