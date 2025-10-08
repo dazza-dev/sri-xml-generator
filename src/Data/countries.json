@@ -2,18 +2,9 @@
   { "code": "016", "description": "AMERICAN SAMOA" },
   { "code": "074", "description": "BOUVET ISLAND" },
   { "code": "101", "description": "ARGENTINA" },
-  {
-    "code": "102",
-    "description": "BOLIVIA"
-  },
-  {
-    "code": "103",
-    "description": "BRASIL"
-  },
-  {
-    "code": "104",
-    "description": "CANADÁ"
-  },
+  { "code": "102", "description": "BOLIVIA" },
+  { "code": "103", "description": "BRASIL" },
+  { "code": "104", "description": "CANADÁ" },
   { "code": "105", "description": "COLOMBIA" },
   { "code": "106", "description": "COSTA RICA" },
   { "code": "107", "description": "CUBA" },
