@@ -1,0 +1,14 @@
+[
+  {
+    "code": 1,
+    "name": "RENTA"
+  },
+  {
+    "code": 2,
+    "name": "IVA"
+  },
+  {
+    "code": 6,
+    "name": "ISD"
+  }
+]
