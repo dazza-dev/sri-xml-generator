@@ -1,26 +1,26 @@
 [
   {
-    "name": "Factura",
-    "code": "01"
+    "code": "01",
+    "name": "Factura"
   },
   {
-    "name": "Liquidación de compra de bienes y prestación de servicios",
-    "code": "03"
+    "code": "03",
+    "name": "Liquidación de compra de bienes y prestación de servicios"
   },
   {
-    "name": "Nota de crédito",
-    "code": "04"
+    "code": "04",
+    "name": "Nota de crédito"
   },
   {
-    "name": "Nota de débito",
-    "code": "05"
+    "code": "05",
+    "name": "Nota de débito"
   },
   {
-    "name": "Guía de remisión",
-    "code": "06"
+    "code": "06",
+    "name": "Guía de remisión"
   },
   {
-    "name": "Comprobante de retención",
-    "code": "07"
+    "code": "07",
+    "name": "Comprobante de retención"
   }
 ]
