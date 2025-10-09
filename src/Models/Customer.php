@@ -28,6 +28,33 @@ class Customer
     private ?string $address = null;
 
     /**
+     * Customer constructor
+     */
+    public function __construct(array $data = [])
+    {
+        $this->initialize($data);
+    }
+
+    /**
+     * Initialize data
+     */
+    private function initialize(array $data): void
+    {
+        if (empty($data)) {
+            return;
+        }
+
+        $this->setIdentificationType($data['identification_type']);
+        $this->setIdentificationNumber($data['identification_number']);
+        $this->setName($data['name']);
+
+        // Address
+        if (isset($data['address'])) {
+            $this->setAddress($data['address']);
+        }
+    }
+
+    /**
      * Get identification type
      */
     public function getIdentificationType(): IdentificationType
