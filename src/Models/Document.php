@@ -12,6 +12,8 @@ class Document
 
     private DocumentType $documentType;
 
+    private string $accessKey;
+
     private string $sequential;
 
     private string $date;
@@ -25,8 +27,9 @@ class Document
      *
      * @param  array  $data  Document data
      */
-    public function __construct(array $data = [])
+    public function __construct(string $accessKey, array $data)
     {
+        $this->setAccessKey($accessKey);
         $this->initialize($data);
     }
 
@@ -55,6 +58,22 @@ class Document
 
         // Customer
         $this->setCustomer($data['customer']);
+    }
+
+    /**
+     * Set access key
+     */
+    public function setAccessKey(string $accessKey): void
+    {
+        $this->accessKey = $accessKey;
+    }
+
+    /**
+     * Get access key
+     */
+    public function getAccessKey(): string
+    {
+        return $this->accessKey;
     }
 
     /**
@@ -165,6 +184,7 @@ class Document
         return [
             'environment' => $this->getEnvironment(),
             'document_type' => $this->getDocumentType()->toArray(),
+            'access_key' => $this->getAccessKey(),
             'sequential' => $this->getSequential(),
             'date' => $this->getDate(),
             'customer' => $this->getCustomer()->toArray(),
