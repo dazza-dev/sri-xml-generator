@@ -7,30 +7,29 @@ use Exception;
 class DateValidator
 {
     /**
-     * Validate if a string is a valid date in Y-m-d format.
+     * Validate if a string is a valid date in d/m/Y format.
      */
     public function isValidDateFormat(string $date): bool
     {
-        if (! preg_match('/^\d{4}-\d{2}-\d{2}$/', $date)) {
+        if (! preg_match('/^\d{2}\/\d{2}\/\d{4}$/', $date)) {
             return false;
         }
 
-        $parts = explode('-', $date);
+        $parts = explode('/', $date);
 
-        return checkdate((int) $parts[1], (int) $parts[2], (int) $parts[0]);
+        return checkdate((int) $parts[1], (int) $parts[0], (int) $parts[2]);
     }
 
     /**
-     * Validate or convert the date to the America/Bogota timezone.
-     * Date must be in ISO 8601 format.
+     * Validate date in d/m/Y format (e.g., 21/10/2012).
      *
-     * @throws Exception If date is not in ISO 8601 format
+     * @throws Exception If date is not in d/m/Y format or is invalid
      */
     public function validate(string $date): string
     {
-        // Validate ISO 8601 format
-        if (! preg_match('/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:?\d{2})?$/', $date)) {
-            throw new Exception('Date must be in ISO 8601 format (e.g. 2025-12-31T23:59:59Z) but got: ' . $date);
+        // Validate d/m/Y format
+        if (! preg_match('/^\d{2}\/\d{2}\/\d{4}$/', $date)) {
+            throw new Exception('Date must be in d/m/Y format (e.g. 21/10/2012) but got: ' . $date);
         }
 
         return $date;

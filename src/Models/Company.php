@@ -73,7 +73,7 @@ class Company
             return;
         }
 
-        $this->setIdentificationNumber($data['document_number']);
+        $this->setIdentificationNumber($data['identification_number']);
         $this->setLegalName($data['legal_name']);
         $this->setTradeName($data['trade_name'] ?? '');
         $this->setHeadOfficeAddress($data['head_office_address']);
