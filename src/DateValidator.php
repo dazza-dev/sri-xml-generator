@@ -2,44 +2,68 @@
 
 namespace DazzaDev\SriXmlGenerator;
 
+use DateTime;
 use Exception;
 
 class DateValidator
 {
     /**
-     * Validate if a string is a valid date in d/m/Y format.
+     * Validate if a string is a valid date in Y-m-d format.
      */
     public function isValidDateFormat(string $date): bool
     {
-        if (! preg_match('/^\d{2}\/\d{2}\/\d{4}$/', $date)) {
+        if (! preg_match('/^\d{4}-\d{2}-\d{2}$/', $date)) {
             return false;
         }
 
-        $parts = explode('/', $date);
+        $parts = explode('-', $date);
 
-        return checkdate((int) $parts[1], (int) $parts[0], (int) $parts[2]);
+        return checkdate((int) $parts[1], (int) $parts[2], (int) $parts[0]);
     }
 
     /**
-     * Validate date in d/m/Y format (e.g., 21/10/2012).
+     * Validate or convert the date to the America/Bogota timezone.
+     * Date must be in ISO 8601 format.
      *
-     * @throws Exception If date is not in d/m/Y format or is invalid
+     * @throws Exception If date is not in ISO 8601 format
      */
-    public function validate(string $date): string
+    public function validate(string|DateTime $date): DateTime
     {
-        // Validate d/m/Y format
-        if (! preg_match('/^\d{2}\/\d{2}\/\d{4}$/', $date)) {
-            throw new Exception('Date must be in d/m/Y format (e.g. 21/10/2012) but got: ' . $date);
+        // Validate ISO 8601 format
+        if (! preg_match('/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:?\d{2})?$/', $date)) {
+            throw new Exception('Date must be in ISO 8601 format (e.g. 2025-12-31) but got: ' . $date);
         }
 
-        return $date;
+        $dateObject = new DateTime($date);
+
+        return $dateObject;
     }
 
     /**
      * Get date in d/m/Y format
      */
-    public function getDate(string $date): string
+    public function getDate(string|DateTime $date): string
     {
-        return $this->validate($date);
+        $dateObject = $this->validate($date);
+
+        return $dateObject->format('d/m/Y');
+    }
+
+    /**
+     * Get time in H:i:s%z format
+     */
+    public function getTime(string|DateTime $date): string
+    {
+        $dateObject = $this->validate($date);
+
+        return $dateObject->format('H:i:sP');
+    }
+
+    /**
+     * Get DateTime object
+     */
+    public function getDateTime(string|DateTime $date): string
+    {
+        return $this->validate($date)->format('d/m/Y H:i:sP');
     }
 }
