@@ -2,7 +2,7 @@
 
 namespace DazzaDev\SriXmlGenerator\Enums;
 
-enum Environments: string
+enum Environments: int
 {
     case TEST = 1;
     case PRODUCTION = 2;
