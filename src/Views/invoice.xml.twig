@@ -1,0 +1,11 @@
+{% apply spaceless %}<?xml version="1.0" encoding="UTF-8" ?>{% endapply %}
+<factura
+  xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  id="comprobante"
+  version="2.1.0"
+>
+  {% include 'Components/issuer-info.xml.twig' %} {% include
+  'Components/invoice-info.xml.twig' %} {% include 'Components/items.xml.twig'
+  %} {% include 'Components/additional-info.xml.twig' %}
+</factura>

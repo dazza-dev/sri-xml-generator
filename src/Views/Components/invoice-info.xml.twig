@@ -1,0 +1,64 @@
+<infoFactura>
+  <fechaEmision>{{ date }}</fechaEmision>
+  <dirEstablecimiento>{{ company.establishment.address }}</dirEstablecimiento>
+  <contribuyenteEspecial>{{
+    company.special_taxpayer_number
+  }}</contribuyenteEspecial>
+  <obligadoContabilidad>{{ company.requires_accounting }}</obligadoContabilidad>
+  <tipoIdentificacionComprador>{{
+    customer.identification_type.code
+  }}</tipoIdentificacionComprador>
+  <guiaRemision>000-000-000000000</guiaRemision>
+  <razonSocialComprador>{{ customer.name }}</razonSocialComprador>
+  <identificacionComprador>{{
+    customer.identification_number
+  }}</identificacionComprador>
+  <direccionComprador>{{ customer.address }}</direccionComprador>
+  <totalSinImpuestos>50.00</totalSinImpuestos>
+  <totalSubsidio>50.00</totalSubsidio>
+  <totalDescuento>0.00</totalDescuento>
+  <codDocReembolso>00</codDocReembolso>
+  <totalComprobantesReembolso>50.00</totalComprobantesReembolso>
+  <totalBaseImponibleReembolso>50.00</totalBaseImponibleReembolso>
+  <totalImpuestoReembolso>50.00</totalImpuestoReembolso>
+  <totalConImpuestos>
+    <totalImpuesto>
+      <codigo>2</codigo>
+      <codigoPorcentaje>0</codigoPorcentaje>
+      <descuentoAdicional>0.00</descuentoAdicional>
+      <baseImponible>50.00</baseImponible>
+      <tarifa>49.50</tarifa>
+      <valor>50.00</valor>
+      <valorDevolucionIva>50.00</valorDevolucionIva>
+    </totalImpuesto>
+    <totalImpuesto>
+      <codigo>2</codigo>
+      <codigoPorcentaje>0</codigoPorcentaje>
+      <descuentoAdicional>0.00</descuentoAdicional>
+      <baseImponible>50.00</baseImponible>
+      <tarifa>49.50</tarifa>
+      <valor>50.00</valor>
+      <valorDevolucionIva>50.00</valorDevolucionIva>
+    </totalImpuesto>
+  </totalConImpuestos>
+  <propina>50.00</propina>
+  <importeTotal>50.00</importeTotal>
+  <moneda>moneda0</moneda>
+  <placa>placa0</placa>
+  <pagos>
+    <pago>
+      <formaPago>01</formaPago>
+      <total>50.00</total>
+      <plazo>50.00</plazo>
+      <unidadTiempo>unidadTiem</unidadTiempo>
+    </pago>
+    <pago>
+      <formaPago>01</formaPago>
+      <total>50.00</total>
+      <plazo>50.00</plazo>
+      <unidadTiempo>unidadTiem</unidadTiempo>
+    </pago>
+  </pagos>
+  <valorRetIva>50.00</valorRetIva>
+  <valorRetRenta>50.00</valorRetRenta>
+</infoFactura>
