@@ -10,8 +10,9 @@
   <ptoEmi>{{ company.emission_point.code }}</ptoEmi>
   <secuencial>{{ sequential }}</secuencial>
   <dirMatriz>{{ company.head_office_address }}</dirMatriz>
+  {% if withholding_agent %}
   <agenteRetencion>{{ withholding_agent }}</agenteRetencion>
-  {% if rimpe_regime_taxpayer.name %}
+  {% endif %} {% if rimpe_regime_taxpayer.name %}
   <contribuyenteRimpe>{{ rimpe_regime_taxpayer.name }}</contribuyenteRimpe>
   {% endif %}
 </infoTributaria>

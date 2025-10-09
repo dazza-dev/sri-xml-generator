@@ -1,10 +1,14 @@
 <infoFactura>
   <fechaEmision>{{ date }}</fechaEmision>
   <dirEstablecimiento>{{ company.establishment.address }}</dirEstablecimiento>
+  {% if company.special_taxpayer_number %}
   <contribuyenteEspecial>{{
     company.special_taxpayer_number
   }}</contribuyenteEspecial>
-  <obligadoContabilidad>{{ company.requires_accounting }}</obligadoContabilidad>
+  {% endif %}
+  <obligadoContabilidad>{{
+    company.requires_accounting ? "SI" : "NO"
+  }}</obligadoContabilidad>
   <tipoIdentificacionComprador>{{
     customer.identification_type.code
   }}</tipoIdentificacionComprador>
