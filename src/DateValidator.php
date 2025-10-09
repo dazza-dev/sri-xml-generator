@@ -2,7 +2,6 @@
 
 namespace DazzaDev\SriXmlGenerator;
 
-use DateTime;
 use Exception;
 
 class DateValidator
@@ -27,45 +26,21 @@ class DateValidator
      *
      * @throws Exception If date is not in ISO 8601 format
      */
-    public function validate(string|DateTime $date): DateTime
+    public function validate(string $date): string
     {
-        if ($date instanceof DateTime) {
-            return $date;
-        }
-
         // Validate ISO 8601 format
         if (! preg_match('/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:?\d{2})?$/', $date)) {
             throw new Exception('Date must be in ISO 8601 format (e.g. 2025-12-31T23:59:59Z) but got: ' . $date);
         }
 
-        return new DateTime($date);
+        return $date;
     }
 
     /**
-     * Get date in Y-m-d format
+     * Get date in d/m/Y format
      */
-    public function getDate(string|DateTime $date): string
+    public function getDate(string $date): string
     {
-        $dateObject = $this->validate($date);
-
-        return $dateObject->format('Y-m-d');
-    }
-
-    /**
-     * Get time in H:i:s%z format
-     */
-    public function getTime(string|DateTime $date): string
-    {
-        $dateObject = $this->validate($date);
-
-        return $dateObject->format('H:i:sP');
-    }
-
-    /**
-     * Get DateTime object
-     */
-    public function getDateTime(string|DateTime $date): string
-    {
-        return $this->validate($date)->format('Y-m-d H:i:sP');
+        return $this->validate($date);
     }
 }

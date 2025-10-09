@@ -2,7 +2,6 @@
 
 namespace DazzaDev\SriXmlGenerator\Models;
 
-use DateTime;
 use DazzaDev\SriXmlGenerator\DataLoader;
 use DazzaDev\SriXmlGenerator\DateValidator;
 use DazzaDev\SriXmlGenerator\Enums\Environments;
@@ -15,7 +14,7 @@ class Document
 
     private string $sequential;
 
-    private string $issueDate;
+    private string $date;
 
     private Customer $customer;
 
@@ -48,7 +47,7 @@ class Document
         // Sequential
         $this->setSequential($data['sequential']);
 
-        // Issue date
+        // Date
         $this->setDate($data['date']);
 
         // Company
@@ -111,27 +110,19 @@ class Document
     /**
      * Set date
      */
-    public function setDate(string|DateTime $date): void
+    public function setDate(string $date): void
     {
         $dateValidator = new DateValidator;
 
-        $this->setIssueDate($dateValidator->getDate($date));
+        $this->date = $dateValidator->getDate($date);
     }
 
     /**
      * Get date
      */
-    public function getIssueDate(): string
+    public function getDate(): string
     {
-        return $this->issueDate;
-    }
-
-    /**
-     * Set issue date
-     */
-    public function setIssueDate(string $issueDate): void
-    {
-        $this->issueDate = $issueDate;
+        return $this->date;
     }
 
     /**
@@ -175,7 +166,7 @@ class Document
             'environment' => $this->getEnvironment(),
             'document_type' => $this->getDocumentType()->toArray(),
             'sequential' => $this->getSequential(),
-            'issue_date' => $this->getIssueDate(),
+            'date' => $this->getDate(),
             'customer' => $this->getCustomer()->toArray(),
             'company' => $this->getCompany()->toArray()
         ];
