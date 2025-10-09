@@ -4,8 +4,8 @@ namespace DazzaDev\SriXmlGenerator\Enums;
 
 enum Environments: string
 {
-    case TEST = '1';
-    case PRODUCTION = '2';
+    case TEST = 1;
+    case PRODUCTION = 2;
 
     /**
      * Returns the display name for the environment
