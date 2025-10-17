@@ -1,0 +1,8 @@
+{% apply spaceless %}<?xml version="1.0" encoding="UTF-8" ?>
+<notaDebito id="comprobante" version="1.0.0">
+    {% include 'Components/issuer-info.xml.twig' %} {% include
+    'Components/debit-note/info.xml.twig' %} {% include
+    'Components/additional-info.xml.twig' with { 'node': 'infoAdicional',
+    'nodeItem': 'campoAdicional', 'additionalInfo': additional_info } %}
+</notaDebito>
+{% endapply %}

@@ -1,0 +1,22 @@
+<totalSinImpuestos>{{ totals.subtotal }}</totalSinImpuestos>
+{% if totals.total_subsidy %}
+<totalSubsidio>{{ totals.total_subsidy }}</totalSubsidio>
+{% endif %}
+<totalDescuento>{{ totals.total_discount }}</totalDescuento>
+{% if totals.reimbursement %}
+<codDocReembolso>{{ totals.reimbursement.code }}</codDocReembolso>
+<totalComprobantesReembolso>{{
+    totals.reimbursement.total
+}}</totalComprobantesReembolso>
+<totalBaseImponibleReembolso>{{
+    totals.reimbursement.taxable_base_total
+}}</totalBaseImponibleReembolso>
+<totalImpuestoReembolso>{{
+    totals.reimbursement.tax_total
+}}</totalImpuestoReembolso>
+{% endif %} {% include 'Components/invoice/taxes.xml.twig' with { 'node':
+'totalConImpuestos', 'nodeItem': 'totalImpuesto', 'taxes': totals.taxes } %} {%
+if totals.tip %}
+<propina>{{ totals.tip }}</propina>
+{% endif %}
+<importeTotal>{{ totals.total }}</importeTotal>

@@ -1,0 +1,26 @@
+[
+  {
+    "code": "01",
+    "name": "Factura"
+  },
+  {
+    "code": "03",
+    "name": "Liquidación de compra de bienes y prestación de servicios"
+  },
+  {
+    "code": "04",
+    "name": "Nota de crédito"
+  },
+  {
+    "code": "05",
+    "name": "Nota de débito"
+  },
+  {
+    "code": "06",
+    "name": "Guía de remisión"
+  },
+  {
+    "code": "07",
+    "name": "Comprobante de retención"
+  }
+]

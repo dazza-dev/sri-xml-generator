@@ -1,0 +1,8 @@
+<motivos>
+    {% for reason in reasons %}
+    <motivo>
+        <razon>{{ reason.reason }}</razon>
+        <valor>{{ reason.amount }}</valor>
+    </motivo>
+    {% endfor %}
+</motivos>

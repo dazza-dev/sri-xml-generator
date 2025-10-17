@@ -1,0 +1,20 @@
+<{{ node }}>
+  {% for tax in taxes %}
+  <{{ nodeItem }}>
+    <codigo>{{ tax.tax_type.code }}</codigo>
+    <codigoPorcentaje>{{ tax.tax_percentage.code }}</codigoPorcentaje>
+    {% if nodeItem == 'impuesto' %}
+    <tarifa>{{ tax.rate }}</tarifa>
+    <baseImponible>{{ tax.taxable_base }}</baseImponible>
+    {% else %}
+    <descuentoAdicional>{{ tax.discount }}</descuentoAdicional>
+    <baseImponible>{{ tax.taxable_base }}</baseImponible>
+    <tarifa>{{ tax.rate }}</tarifa>
+    {% endif %}
+    <valor>{{ tax.value }}</valor>
+    {% if tax.refund_value %}
+    <valorDevolucionIva>{{ tax.refund_value }}</valorDevolucionIva>
+    {% endif %}
+  </{{ nodeItem }}>
+  {% endfor %}
+</{{ node }}>

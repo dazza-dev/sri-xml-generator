@@ -1,0 +1,18 @@
+<infoTributaria>
+  <ambiente>{{ environment.code }}</ambiente>
+  <tipoEmision>1</tipoEmision>
+  <razonSocial>{{ company.legal_name }}</razonSocial>
+  <nombreComercial>{{ company.trade_name }}</nombreComercial>
+  <ruc>{{ company.ruc }}</ruc>
+  <claveAcceso>{{ access_key }}</claveAcceso>
+  <codDoc>{{ document_type.code }}</codDoc>
+  <estab>{{ establishment.code }}</estab>
+  <ptoEmi>{{ emission_point.code }}</ptoEmi>
+  <secuencial>{{ sequential }}</secuencial>
+  <dirMatriz>{{ company.head_office_address }}</dirMatriz>
+  {% if withholding_agent %}
+  <agenteRetencion>{{ withholding_agent }}</agenteRetencion>
+  {% endif %} {% if rimpe_regime_taxpayer.name %}
+  <contribuyenteRimpe>{{ rimpe_regime_taxpayer.name }}</contribuyenteRimpe>
+  {% endif %}
+</infoTributaria>

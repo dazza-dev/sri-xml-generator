@@ -1,0 +1,13 @@
+<pagos>
+  {% for payment in payments %}
+  <pago>
+    <formaPago>{{ payment.payment_method.code }}</formaPago>
+    <total>{{ payment.amount }}</total>
+    {% if payment.term %}
+    <plazo>{{ payment.term }}</plazo>
+    {% endif %} {% if payment.unit_time %}
+    <unidadTiempo>{{ payment.unit_time }}</unidadTiempo>
+    {% endif %}
+  </pago>
+  {% endfor %}
+</pagos>

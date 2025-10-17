@@ -1,0 +1,33 @@
+<infoNotaDebito>
+    <fechaEmision>{{ date }}</fechaEmision>
+    <dirEstablecimiento>{{ establishment.address }}</dirEstablecimiento>
+    <tipoIdentificacionComprador>{{
+        customer.identification_type.code
+    }}</tipoIdentificacionComprador>
+    <razonSocialComprador>{{ customer.name }}</razonSocialComprador>
+    <identificacionComprador>{{
+        customer.identification_number
+    }}</identificacionComprador>
+    {% if company.special_taxpayer_number %}
+    <contribuyenteEspecial>{{
+        company.special_taxpayer_number
+    }}</contribuyenteEspecial>
+    {% endif %}
+    <obligadoContabilidad>{{
+        company.requires_accounting ? "SI" : "NO"
+    }}</obligadoContabilidad>
+
+    <codDocModificado>{{
+        referenced_document.document_type.code
+    }}</codDocModificado>
+    <numDocModificado>{{ referenced_document.number }}</numDocModificado>
+    <fechaEmisionDocSustento>{{
+        referenced_document.emission_date
+    }}</fechaEmisionDocSustento>
+    <totalSinImpuestos>{{ totals.subtotal }}</totalSinImpuestos>
+    {% include 'Components/debit-note/taxes.xml.twig' with { 'node':
+    'impuestos', 'nodeItem': 'impuesto', 'taxes': totals.taxes } %}
+    <valorTotal>{{ totals.total }}</valorTotal>
+    {% include 'Components/payments.xml.twig' with {'payments': payments} %}
+</infoNotaDebito>
+{% include 'Components/debit-note/reasons.xml.twig' with {'reasons': reasons} %}

@@ -1,0 +1,10 @@
+[
+  { "code": 9, "name": "10%", "description": "" },
+  { "code": 10, "name": "20%", "description": "" },
+  { "code": 1, "name": "30%", "description": "" },
+  { "code": 11, "name": "50%", "description": "" },
+  { "code": 2, "name": "70%", "description": "" },
+  { "code": 3, "name": "100%", "description": "" },
+  { "code": 7, "name": "0%", "description": "Retención en cero" },
+  { "code": 8, "name": "0%", "description": "No procede retención" }
+]

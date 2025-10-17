@@ -1,0 +1,26 @@
+<detalles>
+    {% for item in lineItems %}
+    <detalle>
+        <codigoPrincipal>{{ item.code }}</codigoPrincipal>
+        <codigoAuxiliar>{{ item.auxiliary_code }}</codigoAuxiliar>
+        <descripcion>{{ item.description }}</descripcion>
+        <unidadMedida>{{ item.unit }}</unidadMedida>
+        <cantidad>{{ item.quantity }}</cantidad>
+        <precioUnitario>{{ item.unit_price }}</precioUnitario>
+        {% if item.unit_price_without_subsidy %}
+        <precioSinSubsidio>{{
+            item.unit_price_without_subsidy
+        }}</precioSinSubsidio>
+        {% endif %}
+        <descuento>{{ item.discount }}</descuento>
+        <precioTotalSinImpuesto>{{
+            item.total_price_without_tax
+        }}</precioTotalSinImpuesto>
+        {% include 'Components/additional-info.xml.twig' with { 'node':
+        'detallesAdicionales', 'nodeItem': 'detAdicional', 'additionalInfo':
+        item.additional_info } %} {% include 'Components/invoice/taxes.xml.twig'
+        with { 'node': 'impuestos', 'nodeItem': 'impuesto','taxes': item.taxes}
+        %}
+    </detalle>
+    {% endfor %}
+</detalles>

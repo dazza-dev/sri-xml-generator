@@ -1,0 +1,10 @@
+<retenciones>
+  {% for withholding in withholdings %}
+  <retencion>
+    <codigo>{{ withholding.withholding_type.code }}</codigo>
+    <codigoPorcentaje>{{ withholding.percentage_code }}</codigoPorcentaje>
+    <tarifa>{{ withholding.rate }}</tarifa>
+    <valor>{{ withholding.value }}</valor>
+  </retencion>
+  {% endfor %}
+</retenciones>

@@ -1,0 +1,22 @@
+[
+  {
+    "code": "04",
+    "name": "RUC"
+  },
+  {
+    "code": "05",
+    "name": "Cédula"
+  },
+  {
+    "code": "06",
+    "name": "Pasaporte"
+  },
+  {
+    "code": "07",
+    "name": "Venta a consumidor final"
+  },
+  {
+    "code": "08",
+    "name": "Identificación del exterior"
+  }
+]

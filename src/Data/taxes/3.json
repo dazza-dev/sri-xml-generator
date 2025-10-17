@@ -1,0 +1,458 @@
+[
+  {
+    "code": "3011",
+    "name": "ICE Cigarrillos Rubios",
+    "ad_valorem": null,
+    "specific_value": 0.16
+  },
+  {
+    "code": "3021",
+    "name": "ICE Cigarrillos Negros",
+    "ad_valorem": null,
+    "specific_value": 0.16
+  },
+  {
+    "code": "3023",
+    "name": "ICE Productos del Tabaco y Sucedáneos del Tabaco excepto Cigarrillos",
+    "ad_valorem": "150%",
+    "specific_value": null
+  },
+  {
+    "code": "3031",
+    "name": "ICE Bebidas Alcohólicas",
+    "ad_valorem": "75%",
+    "specific_value": 10.0
+  },
+  {
+    "code": "3041",
+    "name": "ICE Cerveza Industrial Gran Escala",
+    "ad_valorem": "75%",
+    "specific_value": null
+  },
+  {
+    "code": "3041",
+    "name": "ICE Cerveza Industrial Mediana Escala",
+    "ad_valorem": "75%",
+    "specific_value": null
+  },
+  {
+    "code": "3041",
+    "name": "ICE Cerveza Industrial Pequeña Escala",
+    "ad_valorem": "75%",
+    "specific_value": null
+  },
+  {
+    "code": "3073",
+    "name": "ICE Vehículos Motorizados cuyo PVP sea hasta de 20000 USD",
+    "ad_valorem": "5%",
+    "specific_value": null
+  },
+  {
+    "code": "3075",
+    "name": "ICE Vehículos Motorizados PVP entre 30000 USD y 40000 USD",
+    "ad_valorem": "15%",
+    "specific_value": null
+  },
+  {
+    "code": "3077",
+    "name": "ICE Vehículos Motorizados cuyo PVP sea superior a 40000 USD hasta 50000 USD",
+    "ad_valorem": "20%",
+    "specific_value": null
+  },
+  {
+    "code": "3078",
+    "name": "ICE Vehículos Motorizados cuyo PVP sea superior a 50000 USD hasta 60000 USD",
+    "ad_valorem": "25%",
+    "specific_value": null
+  },
+  {
+    "code": "3079",
+    "name": "ICE Vehículos Motorizados cuyo PVP sea superior a 60000 USD hasta 70000 USD",
+    "ad_valorem": "30%",
+    "specific_value": null
+  },
+  {
+    "code": "3080",
+    "name": "ICE Vehículos Motorizados cuyo PVP sea superior a 70000 USD",
+    "ad_valorem": "35%",
+    "specific_value": null
+  },
+  {
+    "code": "3081",
+    "name": "ICE Aviones, Tricares, yates, Barcos de Recreo",
+    "ad_valorem": "10%",
+    "specific_value": null
+  },
+  {
+    "code": "3092",
+    "name": "ICE Servicios de Televisión Prepagada",
+    "ad_valorem": "0%",
+    "specific_value": null
+  },
+  {
+    "code": "3610",
+    "name": "ICE Perfumes y Aguas de Tocador",
+    "ad_valorem": "20%",
+    "specific_value": null
+  },
+  {
+    "code": "3620",
+    "name": "ICE Videojuegos",
+    "ad_valorem": "0%",
+    "specific_value": null
+  },
+  {
+    "code": "3630",
+    "name": "ICE Armas de Fuego, Armas deportivas y Municiones",
+    "ad_valorem": "30%",
+    "specific_value": null
+  },
+  {
+    "code": "3640",
+    "name": "ICE Focos Incandescentes",
+    "ad_valorem": "100%",
+    "specific_value": null
+  },
+  {
+    "code": "3660",
+    "name": "ICE Cuotas Membresias Afiliaciones Acciones",
+    "ad_valorem": "35%",
+    "specific_value": null
+  },
+  {
+    "code": "3093",
+    "name": "ICE Servicios de Telefonía Sociedades",
+    "ad_valorem": "15%",
+    "specific_value": null
+  },
+  {
+    "code": "3101",
+    "name": "ICE Bebidas Energizantes",
+    "ad_valorem": "10%",
+    "specific_value": null
+  },
+  {
+    "code": "3053",
+    "name": "ICE Bebidas Gaseosas con Alto Contenido de Azúcar",
+    "ad_valorem": null,
+    "specific_value": "0.18 por 100 gramos de azúcar"
+  },
+  {
+    "code": "3054",
+    "name": "ICE Bebidas Gaseosas con Bajo Contenido de Azúcar",
+    "ad_valorem": "10%",
+    "specific_value": null
+  },
+  {
+    "code": "3111",
+    "name": "ICE Bebidas No Alcohólicas",
+    "ad_valorem": null,
+    "specific_value": "0.18 por 100 gramos de azúcar"
+  },
+  {
+    "code": "3043",
+    "name": "ICE Cerveza Artesanal",
+    "ad_valorem": null,
+    "specific_value": 1.5
+  },
+  {
+    "code": "3033",
+    "name": "ICE Alcohol",
+    "ad_valorem": "75%",
+    "specific_value": 10.0
+  },
+  {
+    "code": "3671",
+    "name": "ICE calefones y sistemas de calentamiento de agua a gas SRI ",
+    "ad_valorem": "100%",
+    "specific_value": null
+  },
+  {
+    "code": "3684",
+    "name": "ICE Vehículos motorizados camionetas y de rescate cuyo PVP sea hasta DE 30.000",
+    "ad_valorem": "5%",
+    "specific_value": null
+  },
+  {
+    "code": "3686",
+    "name": "ICE vehículos motorizados excepto camionetas y de rescate cuyo PVP sea superior USD 20.000 hasta DE 30.000",
+    "ad_valorem": "10%",
+    "specific_value": null
+  },
+  {
+    "code": "3688",
+    "name": "ICE vehículos híbridos cuyo PVP sea de hasta USD. 35.000",
+    "ad_valorem": "0%",
+    "specific_value": null
+  },
+  {
+    "code": "3691",
+    "name": "ICE vehículos híbridos cuyo PVP superior USD 35.000 hasta 40.000",
+    "ad_valorem": "8%",
+    "specific_value": null
+  },
+  {
+    "code": "3692",
+    "name": "ICE vehículos híbridos cuyo PVP superior USD 40.000 hasta 50.000",
+    "ad_valorem": "14%",
+    "specific_value": null
+  },
+  {
+    "code": "3695",
+    "name": "ICE vehículos híbridos cuyo PVP superior USD 50.000 hasta 60.000",
+    "ad_valorem": "20%",
+    "specific_value": null
+  },
+  {
+    "code": "3696",
+    "name": "ICE vehículos híbridos cuyo PVP superior USD 60.000 hasta 70.000",
+    "ad_valorem": "26%",
+    "specific_value": null
+  },
+  {
+    "code": "3698",
+    "name": "ICE vehículos híbridos cuyo PVP superior a USD 70.000",
+    "ad_valorem": "32%",
+    "specific_value": null
+  },
+  {
+    "code": "3682",
+    "name": "ICE consumibles tabaco calentado y liquidos con nicotina SRI",
+    "ad_valorem": "150%",
+    "specific_value": null
+  },
+  {
+    "code": "3681",
+    "name": "ICE servicios de telefonía móvil personas naturales",
+    "ad_valorem": "0%",
+    "specific_value": null
+  },
+  {
+    "code": "3680",
+    "name": "ICE fundas plásticas",
+    "ad_valorem": null,
+    "specific_value": 0.08
+  },
+  {
+    "code": "3533",
+    "name": "ICE Import. Bebidas Alcohólicas",
+    "ad_valorem": "75%",
+    "specific_value": null
+  },
+  {
+    "code": "3541",
+    "name": "ICE Cerveza Gran Escala CAE",
+    "ad_valorem": "75%",
+    "specific_value": null
+  },
+  {
+    "code": "3541",
+    "name": "ICE Cerveza Industrial de Mediana Escala CAE",
+    "ad_valorem": "75%",
+    "specific_value": null
+  },
+  {
+    "code": "3541",
+    "name": "ICE Cerveza Industrial de Pequeña Escala CAE",
+    "ad_valorem": "75%",
+    "specific_value": null
+  },
+  {
+    "code": "3542",
+    "name": "ICE Cigarrillos Rubios CAE",
+    "ad_valorem": null,
+    "specific_value": null
+  },
+  {
+    "code": "3543",
+    "name": "ICE Cigarrillos Negros CAE",
+    "ad_valorem": null,
+    "specific_value": null
+  },
+  {
+    "code": "3544",
+    "name": "ICE Productos del Tabaco y Sucedáneos del Tabaco Excepto Cigarrillos CAE",
+    "ad_valorem": "150%",
+    "specific_value": null
+  },
+  {
+    "code": "3581",
+    "name": "ICE Aeronaves CAE",
+    "ad_valorem": "10%",
+    "specific_value": null
+  },
+  {
+    "code": "3582",
+    "name": "ICE Aviones, Avionetas y Helicópteros Excl. Aquellos destinados al Trans. CAE",
+    "ad_valorem": "10%",
+    "specific_value": null
+  },
+  {
+    "code": "3710",
+    "name": "ICE Perfumes Aguas de Tocador Cae",
+    "ad_valorem": "20%",
+    "specific_value": null
+  },
+  {
+    "code": "3720",
+    "name": "ICE Video Juegos CAE",
+    "ad_valorem": "35%",
+    "specific_value": null
+  },
+  {
+    "code": "3730",
+    "name": "ICE Importaciones Armas de Fuego, Armas deportivas y Municiones CAE",
+    "ad_valorem": "30%",
+    "specific_value": null
+  },
+  {
+    "code": "3740",
+    "name": "ICE Focos Incandescentes CAE",
+    "ad_valorem": "100%",
+    "specific_value": null
+  },
+  {
+    "code": "3871",
+    "name": "ICE-vehículos motorizados cuyo PVP SEA hasta de 20000 USD SENAE",
+    "ad_valorem": "5%",
+    "specific_value": null
+  },
+  {
+    "code": "3873",
+    "name": "ICE-vehículos motorizados PVP entre 30000 Y 40000 SENAE",
+    "ad_valorem": "15%",
+    "specific_value": null
+  },
+  {
+    "code": "3874",
+    "name": "ICE-vehículos motorizados cuyo PVP superior USD 40.000 hasta 50.000 SENAE",
+    "ad_valorem": "20%",
+    "specific_value": null
+  },
+  {
+    "code": "3875",
+    "name": "ICE-vehículos motorizados cuyo PVP superior USD 50.000 hasta 60.000 SENAE",
+    "ad_valorem": "25%",
+    "specific_value": null
+  },
+  {
+    "code": "3876",
+    "name": "ICE-vehículos motorizados cuyo PVP superior USD 60.000 hasta 70.000 SENAE",
+    "ad_valorem": "30%",
+    "specific_value": null
+  },
+  {
+    "code": "3877",
+    "name": "ICE-vehículos motorizados cuyo PVP superior USD 70.000 SENAE",
+    "ad_valorem": "35%",
+    "specific_value": null
+  },
+  {
+    "code": "3878",
+    "name": "ICE-Aviones, Tricares, yates, Barcos de Rec SENAE",
+    "ad_valorem": "10%",
+    "specific_value": null
+  },
+  {
+    "code": "3601",
+    "name": "ICE Bebidas Energizantes SENAE",
+    "ad_valorem": "10%",
+    "specific_value": null
+  },
+  {
+    "code": "3552",
+    "name": "ICE bebidas gaseosas con alto contenido de azúcar SENAE",
+    "ad_valorem": null,
+    "specific_value": "0.18 por 100 gramos de azúcar"
+  },
+  {
+    "code": "3553",
+    "name": "ICE bebidas gaseosas con bajo contenido de azúcar SENAE",
+    "ad_valorem": "10%",
+    "specific_value": null
+  },
+  {
+    "code": "3602",
+    "name": "ICE bebidas no alcohólicas SENAE",
+    "ad_valorem": null,
+    "specific_value": "0.18 por 100 gramos de azúcar"
+  },
+  {
+    "code": "3545",
+    "name": "ICE cerveza artesanal SENAE",
+    "ad_valorem": "75%",
+    "specific_value": 1.5
+  },
+  {
+    "code": "3532",
+    "name": "ICE Import. alcohol SENAE",
+    "ad_valorem": "75%",
+    "specific_value": 10
+  },
+  {
+    "code": "3671",
+    "name": "ICE calefones y sistemas de calentamiento de agua a gas SRI",
+    "ad_valorem": "100%",
+    "specific_value": null
+  },
+  {
+    "code": "3771",
+    "name": "ICE calefones y sistemas de calentamiento de agua a gas SENAE",
+    "ad_valorem": "100%",
+    "specific_value": null
+  },
+  {
+    "code": "3685",
+    "name": "ICE vehículos motorizados camionetas y de rescate PVP sea hasta DE 30.000 USD SENAE",
+    "ad_valorem": "5%",
+    "specific_value": null
+  },
+  {
+    "code": "3687",
+    "name": "ICE vehículos motorizados excepto camionetas y de rescate cuyo PVP sea superior USD 20.000 hasta de 30.000 SENAE",
+    "ad_valorem": "10%",
+    "specific_value": null
+  },
+  {
+    "code": "3689",
+    "name": "ICE vehículos híbridos cuyo PVP sea de hasta USD 35.000 SENAE",
+    "ad_valorem": "0%",
+    "specific_value": null
+  },
+  {
+    "code": "3690",
+    "name": "ICE vehículos híbridos cuyo PVP superior USD 35.000 hasta 40.000 SENAE",
+    "ad_valorem": "8%",
+    "specific_value": null
+  },
+  {
+    "code": "3693",
+    "name": "ICE vehículos híbridos cuyo PVP superior USD 40.000 hasta 50.000 SENAE",
+    "ad_valorem": "14%",
+    "specific_value": null
+  },
+  {
+    "code": "3694",
+    "name": "ICE vehículos híbridos cuyo PVP superior USD 50.000 hasta 60.000 SENAE",
+    "ad_valorem": "20%",
+    "specific_value": null
+  },
+  {
+    "code": "3697",
+    "name": "ICE vehículos híbridos cuyo PVP superior USD 60.000 hasta 70.000 SENAE",
+    "ad_valorem": "26%",
+    "specific_value": null
+  },
+  {
+    "code": "3699",
+    "name": "ICE vehículos híbridos cuyo PVP superior a USD 70.000 SENAE",
+    "ad_valorem": "32%",
+    "specific_value": null
+  },
+  {
+    "code": "3683",
+    "name": "ICE consumibles tabaco calentado y líquidos con nicotina SENAE",
+    "ad_valorem": "50%",
+    "specific_value": null
+  }
+]

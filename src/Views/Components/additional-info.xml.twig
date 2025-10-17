@@ -1,0 +1,11 @@
+{% if additionalInfo|length > 0 %}
+<{{ node }}>
+  {% for item in additionalInfo %}
+  {% if nodeItem == 'detAdicional' %}
+  <{{ nodeItem }} nombre="{{ item.name }}" valor="{{ item.value }}"/>
+  {% else %}
+  <{{ nodeItem }} nombre="{{ item.name }}">{{ item.value }}</{{ nodeItem }}>
+  {% endif %}
+  {% endfor %}
+</{{ node }}>
+{% endif %}

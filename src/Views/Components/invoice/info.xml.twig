@@ -1,0 +1,33 @@
+<infoFactura>
+    <fechaEmision>{{ date }}</fechaEmision>
+    <dirEstablecimiento>{{ establishment.address }}</dirEstablecimiento>
+    {% if company.special_taxpayer_number %}
+    <contribuyenteEspecial>{{
+        company.special_taxpayer_number
+    }}</contribuyenteEspecial>
+    {% endif %}
+    <obligadoContabilidad>{{
+        company.requires_accounting ? "SI" : "NO"
+    }}</obligadoContabilidad>
+    <tipoIdentificacionComprador>{{
+        customer.identification_type.code
+    }}</tipoIdentificacionComprador>
+    {% if delivery_guide %}
+    <guiaRemision>{{ delivery_guide }}</guiaRemision>
+    {% endif %}
+    <razonSocialComprador>{{ customer.name }}</razonSocialComprador>
+    <identificacionComprador>{{
+        customer.identification_number
+    }}</identificacionComprador>
+    {% if customer.address %}
+    <direccionComprador>{{ customer.address }}</direccionComprador>
+    {% endif %} {% include 'Components/invoice/totals.xml.twig' with {'totals':
+    totals} %}
+    <moneda>DOLAR</moneda>
+    {% include 'Components/payments.xml.twig' with {'payments': payments} %} {%
+    if total_iva_amount %}
+    <valorRetIva>{{ total_iva_amount }}</valorRetIva>
+    {% endif %} {% if total_renta_amount %}
+    <valorRetRenta>{{ total_renta_amount }}</valorRetRenta>
+    {% endif %}
+</infoFactura>
