@@ -2,7 +2,9 @@
     {% for item in lineItems %}
     <detalle>
         <codigoInterno>{{ item.code }}</codigoInterno>
+        {% if item.auxiliary_code %}
         <codigoAdicional>{{ item.auxiliary_code }}</codigoAdicional>
+        {% endif %}
         <descripcion>{{ item.description }}</descripcion>
         <cantidad>{{ item.quantity }}</cantidad>
         <precioUnitario>{{ item.unit_price }}</precioUnitario>

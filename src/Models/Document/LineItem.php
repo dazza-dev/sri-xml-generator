@@ -75,7 +75,12 @@ class LineItem
     private function initialize(array $data): void
     {
         $this->setCode($data['code']);
-        $this->setAuxiliaryCode($data['auxiliary_code']);
+
+        // Set auxiliary code if provided
+        if (isset($data['auxiliary_code'])) {
+            $this->setAuxiliaryCode($data['auxiliary_code']);
+        }
+
         $this->setDescription($data['description']);
         $this->setUnit($data['unit']);
         $this->setQuantity($data['quantity']);
